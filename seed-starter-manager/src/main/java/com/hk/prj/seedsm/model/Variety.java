@@ -1,6 +1,6 @@
 package com.hk.prj.seedsm.model;
 
-import javax.persistence.Entity;
+import jakarta.persistence.Entity;
 
 import lombok.Data;
 
