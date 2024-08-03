@@ -1,15 +1,12 @@
 spring:
  profiles.active: local
- threads:
-  virtual:
-   enabled: true
 
 ---
 spring:
- config.activate.on-profile: local
+ profiles: local
  datasource:
     username: postgres
-    password: local_postgres
+    password: postgres
     url: jdbc:postgresql://localhost:5432/demo_seed_sm
     driver-class-name: org.postgresql.Driver	
  jpa:
@@ -17,10 +14,7 @@ spring:
     generate-ddl: true
     # Hibernate ddl auto (create, create-drop, validate, update)
     hibernate:
-     ddl-auto: create
- threads:
-  virtual:
-   enabled: true     
+     ddl-auto: create     
 jackson:
   serialization:
     write-dates-as-timestamps: false 
